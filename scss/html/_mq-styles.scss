@@ -1,0 +1,233 @@
+@import "./../utilidades/mixin";
+@import "./../utilidades/vars";
+@import "./../utilidades/extend";
+/* MQ tablet */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  /* General styles */
+
+  footer {
+    .footer-container {
+      display: flex;
+      .footer-left {
+        padding-right: 20px;
+        .span-idx {
+          font-size: 3rem;
+        }
+        .redes {
+          font-size: 1.7rem;
+          gap: 50px;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+      .footer-right {
+        border-left: 2px solid $color-uno;
+        padding-left: 5px;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  /* Home styles */
+  .main-container-idx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      max-width: 100%;
+    }
+    .photoCut,
+    .photoCut-2 {
+      max-width: 250px;
+    }
+    .text-idx {
+      width: 100%;
+      font-size: 0.6rem;
+      padding: 2rem;
+    }
+  }
+  .section-idx-magazine2 {
+    display: none;
+  }
+
+  /* Products styles */
+
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    .products-img-polo {
+      display: none;
+    }
+
+    .products-img {
+      max-width: 400px;
+    }
+
+    .text-products-tittles,
+    .text-products-prices,
+    .text-products-prices1 {
+      font-size: 0.8rem;
+    }
+  }
+  /* about-us */
+  .about-us-tittle {
+    color: $color-uno;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .main-content-aboutus {
+    display: flex;
+    justify-content: center;
+  }
+  .about-us-box1 {
+    display: block;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+
+  .about-us-p {
+    width: 300px;
+    font-size: 1rem;
+    margin: 70px auto;
+  }
+
+  .nari-style {
+    text-decoration: none;
+  }
+}
+
+/* MQ phone */
+
+@media screen and (max-width: 768px) {
+  /*general styles*/
+
+  footer {
+    .footer-container {
+      display: flex;
+      .footer-left {
+        padding-right: 5px;
+        gap: 20px;
+        .span-idx {
+          font-size: 2.2rem;
+        }
+        .redes {
+          font-size: 1.3rem;
+          gap: 30px;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+      .footer-right {
+        border-left: 1px solid $color-uno;
+        padding-left: 5px;
+        padding-right: 5px;
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  /* home styles */
+  main {
+    .main-container-idx {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div {
+        max-width: 100%;
+      }
+      .photoCut {
+        margin-right: 30px;
+        max-width: 250px;
+      }
+      .photoCut-2 {
+        max-width: 250px;
+      }
+      .text-idx {
+        width: 100%;
+        font-size: 1rem;
+        padding: 2rem;
+      }
+    }
+    .section-idx-magazine2 {
+      display: none;
+    }
+  }
+  /* products styles */
+
+  .products-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-img-polo {
+    display: none;
+  }
+
+  .products-img {
+    max-width: 400px;
+  }
+
+  .text-products-tittles,
+  .text-products-prices,
+  .text-products-prices1 {
+    font-size: 1rem;
+  }
+
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .products-img-polo {
+    display: none;
+  }
+  /* about us styles */
+
+  .about-us-tittle {
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .main-content-aboutus {
+    margin: auto;
+  }
+  .about-us-box1 {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .about-us-p {
+    width: 300px;
+    height: 350px;
+    font-family: "Chivo Mono", monospace;
+    font-size: 1.1rem;
+    margin: 70px auto;
+  }
+
+  .nari-style {
+    text-decoration: none;
+  }
+
+  /* faq styles */
+
+  .main-container-FAQ {
+    .text-containers-FAQ {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-cuatro;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  /* contact styles */
+  .form-container {
+    width: 300px;
+    margin-top: 40px;
+  }
+}

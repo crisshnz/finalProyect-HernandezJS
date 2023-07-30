@@ -1,0 +1,80 @@
+@import "./../utilidades/mixin";
+@import "./../utilidades/vars";
+@import "./../utilidades/extend";
+
+/* CONTACT STYLES */
+.main-container-contact {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  .form-child {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    @extend %border;
+    backdrop-filter: blur(2px);
+    .textarea-style {
+      resize: none;
+    }
+    #btn-save {
+      @include btn-contact;
+    }
+    #btn-save:hover {
+      background-color: $color-tres;
+    }
+
+    div label {
+      margin-bottom: 1.5rem;
+    }
+    .style-input-group {
+      position: relative;
+    }
+
+    .style-label-contact > input {
+      border: none;
+      border-bottom: 0.125rem solid $color-cuatro;
+      width: 300px;
+      height: 1.5rem;
+      padding: 20px 10px;
+    }
+
+    .style-label-contact > input:focus {
+      outline: none;
+    }
+
+    .style-label-contact > .style-span-contact {
+      position: absolute;
+      top: 0.3rem;
+      left: 0.7rem;
+      color: $color-uno;
+      transition: top 0.2s;
+    }
+
+    .style-label-contact > input:hover {
+      background: whitesmoke;
+      border-color: $color-tres;
+    }
+
+    .style-label-contact > input:focus + .style-span-contact,
+    .style-label-contact > input:valid + .style-span-contact {
+      top: -1.25rem;
+      margin-bottom: 32px;
+    }
+  }
+  .other-area-contact {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 20px;
+    @extend %border;
+    backdrop-filter: blur(2px);
+  }
+}

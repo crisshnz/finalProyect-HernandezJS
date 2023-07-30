@@ -1,0 +1,38 @@
+@import "./../utilidades/mixin";
+@import "./../utilidades/vars";
+@import "./../utilidades/extend";
+
+/* ABOUT-US STYLES */
+
+.about-us-tittle {
+  color: $color-uno;
+  font-size: 4rem;
+}
+
+.about-us-box1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 40px;
+}
+
+.about-us-box2 {
+  height: 500px;
+  background: url(./../img/aboutUs-leo.png);
+  background-size: cover;
+  @extend %border;
+}
+
+.about-us-p {
+  width: 500px;
+  height: 300px;
+  font-size: 1.3rem;
+  background-color: $color-cuatro;
+  padding: 10px;
+  text-align: center;
+  @extend %border;
+}
+
+.nari-style {
+  text-decoration: none;
+}

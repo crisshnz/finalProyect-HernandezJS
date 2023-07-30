@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "name": "Corte normal",
+      "cost": 1200
+    },
+    {
+      "name": "Reflejos + Corte de pelo",
+      "cost": 4000
+    },
+    {
+      "name": "Tintura Global + corte",
+      "cost": 6000
+    },
+    {
+      "name": "Corte + Estilizado y Productos",
+      "cost": 1800
+    },
+    {
+      "name": "Corte y Estilizado de Barba",
+      "cost": 1500
+    }
+  ]
+}

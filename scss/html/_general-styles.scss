@@ -1,0 +1,112 @@
+@import "./../utilidades/mixin";
+@import "./../utilidades/vars";
+@import "./../utilidades/extend";
+
+/* GENERAL STYLES */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo Mono", monospace;
+}
+
+/* HEADER STYLES */
+header {
+  font-size: 1.3rem;
+  background-color: $color-cuatro;
+
+  .space {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .span-logo {
+    color: $color-dos;
+    font-size: 3rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+}
+
+.color-menu {
+  color: $color-uno;
+}
+
+.color-menu:hover {
+  @include hover-color-menu;
+}
+
+/* body style */
+
+body {
+  background-image: url(./../../img/background-img-gral.jpg);
+}
+
+/* footer style */
+footer {
+  @include footer-style;
+  .footer-container {
+    display: flex;
+    p {
+      font-size: 1rem;
+      color: $color-uno;
+      margin-top: 20px;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      padding-right: 200px;
+      span {
+        color: $color-dos;
+        font-size: 3rem;
+        font-family: "Dancing Script", cursive;
+      }
+      .redes {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        font-size: 2rem;
+      }
+
+      div {
+        a {
+          .instagram:hover {
+            background: radial-gradient(
+              circle at 30% 107%,
+              #fdf497 0%,
+              #fdf497 5%,
+              #fd5949 45%,
+              #d6249f 60%,
+              #285aeb 90%
+            );
+          }
+          .facebook:hover {
+            background: #4267b2;
+          }
+          .twitter:hover {
+            background: #1da1f2;
+          }
+          .btn-social:hover {
+            color: #fff;
+            border-radius: 7px;
+            padding: 3px 5px;
+            transition: all 0.5s;
+          }
+        }
+      }
+      .redes a {
+        color: $color-uno;
+      }
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      border-left: 5px solid $color-uno;
+      padding-left: 200px;
+    }
+  }
+}

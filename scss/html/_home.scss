@@ -1,0 +1,81 @@
+@import "./../utilidades/mixin";
+@import "./../utilidades/vars";
+@import "./../utilidades/extend";
+
+/* HOME STYLES */
+
+/* main style */
+main {
+  position: relative;
+  margin-bottom: 200px;
+}
+.main-container-idx {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  div {
+    .text-idx {
+      width: 700px;
+      font-size: 1.3rem;
+      margin-top: 30px;
+      background-color: $color-cuatro;
+      padding: 50px;
+      text-align: center;
+      @extend %border;
+    }
+    .text-naribarber-innerhome {
+      color: $color-dos;
+      font-size: 2rem;
+      font-family: "Dancing Script", cursive;
+    }
+    .photoCut {
+      @extend %border;
+      width: 300px;
+      margin-left: 30px;
+    }
+    .photoCut-2 {
+      margin-right: 30px;
+    }
+    .span-redirect-home {
+      text-decoration: none;
+    }
+    .link-redirect-home {
+      color: $color-dos;
+    }
+    .link-redirect-home:hover {
+      color: $color-tres;
+    }
+  }
+}
+
+.section-idx-magazine2 {
+  display: flex;
+}
+.idx-section-img {
+  display: flex;
+  margin: auto;
+  width: 600px;
+  height: 430px;
+  @extend %border;
+  .magazine-img-idx {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.5s ease;
+    &:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  }
+}
+.polo-barber-idx-right {
+  width: 200px;
+  margin: 40px 60px 0 0;
+}
+.polo-barber-idx-left {
+  width: 200px;
+  margin: 40px 0 0 60px;
+}
